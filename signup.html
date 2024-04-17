@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0%;
+  padding: 0%;
+}
+
+.bg-img {
+  background-image: url("./fly.jpg"); /* Placeholder image, replace with your own */
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.container {
+  justify-content: center;
+  position: absolute;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 350px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container input[type=text], .container input[type=password] {
+  width: calc(100% - 30px);
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  background: #f3f3f3;
+  border-radius: 5px;
+}
+
+.container input[type=text]:focus, .container input[type=password]:focus {
+  background-color: #e0e0e0;
+}
+
+.container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.container .btn:hover {
+  background-color: #328aac;
+}
+</style>
+</head>
+<body>
+
+<div class="bg-img">
+  <form action="/action_page.php" class="container">
+    <h1>sign-up</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+      <a href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ec=GAlAFw&hl=en-GB&service=mail&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-418441388%3A1712081205571202&theme=mn&ddm=0"><img src="https://imgs.search.brave.com/Hw0fgPqodZAvLUkDoHx6Qgvz7s1GR-tAFikkqKMoed4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4x/Lmljb25maW5kZXIu/Y29tL2RhdGEvaWNv/bnMvZ29vZ2xlLXMt/bG9nby8xNTAvR29v/Z2xlX0ljb25zLTA5/LTEyOC5wbmc" alt="loading" weidth="50px" height="50px"></a>
+      <a href="https://www.instagram.com/?hl=en"><img src="https://imgs.search.brave.com/XpXrmtyH8ElgB0j29sXIL9toPI6a69R5uecmjG2JGbg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/ZWRpZ2l0YWxhZ2Vu/Y3kuY29tLmF1L3dw/LWNvbnRlbnQvdXBs/b2Fkcy9uZXctSW5z/dGFncmFtLWxvZ28t/cG5nLWZ1bGwtY29s/b3VyLWdseXBoLW1l/ZGl1bS1zaXplLTQ1/MC1waXhlbHMucG5n" alt="loading" weidth="40px" height="43px"></a>
+  </form>
+</div>
+
+</body>
+</html>
